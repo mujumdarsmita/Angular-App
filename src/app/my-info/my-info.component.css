@@ -1,3 +1,36 @@
-p{
-    text-align: center;
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* ✅ Centers content horizontally */
+  justify-content: center; /* ✅ Centers vertically if container has height */
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  margin-bottom: 10px;
+  padding: 8px 16px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+.skills-section {
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin: 5px 0;
 }

@@ -1,3 +1,14 @@
 <div class="about-container">
-  <p>Hello! I'm Smita Mujumdar, a software developer passionate about Angular and .Net technologies.</p>
+  <button (click)="toggleBio()">
+    {{ bioVisible ? 'Hide Bio' : 'Click here to know me!' }}
+  </button>
+
+  <p *ngIf="bioVisible">{{ bio }}</p>
+
+  <div class="skills-section">
+    <h3>My Skills:</h3>
+    <ul>
+      <li *ngFor="let skill of skills">✅ {{ skill }}</li>
+    </ul>
+  </div>
 </div>
